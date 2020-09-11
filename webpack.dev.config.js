@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'docs'),
     filename: 'js/[name].js',
-    publicPath: 'https://fercc1097.github.io/',
+    publicPath: 'https://fercc1097.github.io/platzi-badges-challenge/',
     chunkFilename: 'js/[id].[chunkhash].js'
   },
   devServer: {
