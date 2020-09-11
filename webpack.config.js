@@ -12,9 +12,9 @@ module.exports = {
         app:path.resolve(__dirname,'src','index.js'),
 },
     output: {
-        path: path.resolve(__dirname,'dist'),
+        path: path.resolve(__dirname,'docs'),
         filename: `js/[name].[hash].js`,
-        publicPath: 'http://localhost:3003/',
+        publicPath: 'https://fercc1097.github.io/',
         chunkFilename: 'js/[id].[chunkhash].js'
     },
     optimization:{
@@ -68,7 +68,7 @@ module.exports = {
         new AddAssetHtmlPlugin({
             filepath: path.resolve(__dirname,'dist/js/*.dll.js'),
             outputPath: 'js',
-            publicPath: 'http://localhost:3003/js'
+            publicPath: 'https://fercc1097.github.io/js'
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['**/app.*'],

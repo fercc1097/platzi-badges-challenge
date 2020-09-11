@@ -7,13 +7,13 @@ module.exports = {
     app: path.resolve(__dirname,'src','index.js'),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'js/[name].js',
-    publicPath: 'http://localhost:3003/',
+    publicPath: 'https://fercc1097.github.io/',
     chunkFilename: 'js/[id].[chunkhash].js'
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'docs'),
     open: true,
     port: 9001,
     hot: true,
