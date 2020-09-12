@@ -9,7 +9,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname,'src/index.js'),
+    app: path.resolve(__dirname,'src','index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -46,7 +46,7 @@ module.exports = {
           options: {
             limit: 1000,
             name: '[hash].[ext]',
-            outputPath: 'assets'
+            outputPath: 'assets/'
           }
         }
       },
