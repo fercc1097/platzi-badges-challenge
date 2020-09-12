@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="fercc1097.github.io/platzi-badges-challenge/" component={Home} />
-          <Route exact path="fercc1097.github.io/platzi-badges-challenge/badges" component={Badges} />
-          <Route exact path="fercc1097.github.io/platzi-badges-challenge/badges/new" component={BadgeNew} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/badges" component={Badges} />
+          <Route exact path="/badges/new" component={BadgeNew} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
